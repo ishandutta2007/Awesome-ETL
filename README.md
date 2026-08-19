@@ -1,215 +1,89 @@
 # Awesome-ETL
 
-## Top Background Job Platforms Ecosystem
-
+## Top ETL Platforms Ecosystem
 **Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Background Jobs, Durable Workflows, Task Queues, Event-Driven Functions, Retries, Scheduling & Long-Running Processes*
-
+*Focused on Data Integration, ELT/ETL Pipelines, Connectors, CDC, Orchestration & Warehouse Loading*
 **Last updated: August 2026**
 
+This repository tracks notable **SaaS platforms** and **open-source projects** for **ETL / ELT**. These tools extract data from sources (SaaS apps, databases, files, streams), transform it, and load it into data warehouses, lakes, or destinations — with reliable connectors, schema handling, scheduling, and monitoring.
 
+**Examples** include Talend, Matillion, Fivetran, Airbyte, Hevo Data, Informatica, IBM DataStage, Azure Data Factory, AWS Glue, and Stitch (the category leaders).
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Background Job** and durable execution systems. These tools reliably run asynchronous work — emails, webhooks, data processing, AI pipelines, scheduled tasks, and multi-step workflows — with retries, state persistence, and observability.
-
-
-
-**Examples** include Trigger.dev, Inngest, Hatchet, Temporal Cloud, QStash, Cloud Tasks, Sidekiq Enterprise, BullMQ Pro, IronWorker, and Restate (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded. Many leading platforms (Temporal, Trigger.dev, Inngest, Hatchet, Sidekiq, BullMQ) offer strong open-source cores, making self-hosted, production-grade background job systems widely accessible.
-
-
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom connectors, DataOps workflows, and full control over data movement — ideal for data engineers, analytics teams, and organizations that want transparent, cost-effective, vendor-lock-in-free pipelines.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-
-
 ## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
-
-
 ## SaaS/Hosted Platforms
-
-- **[Trigger.dev](https://trigger.dev/)**  
-
-  TypeScript-first background jobs and AI workflow platform with long-running task support, checkpoint-resume, and excellent developer experience (open-source core available).
-
-
-
-- **[Inngest](https://www.inngest.com/)**  
-
-  Event-driven durable functions and step-workflow platform that runs on your existing infrastructure or managed cloud, with strong TypeScript/Python support.
-
-
-
-- **[Hatchet](https://hatchet.run/)**  
-
-  High-throughput open-source task orchestration platform focused on reliability, concurrency control, and AI/data pipelines (managed offering available).
-
-
-
-- **[Temporal Cloud](https://temporal.io/)**  
-
-  Managed service of the Temporal workflow engine — the enterprise standard for durable, long-running, multi-language orchestration.
-
-
-
-- **[QStash (Upstash)](https://upstash.com/qstash)**  
-
-  Serverless message queue and scheduling service designed for HTTP-based background jobs and durable workflows.
-
-
-
-- **[Google Cloud Tasks](https://cloud.google.com/tasks)**  
-
-  Fully managed task queue service for asynchronous execution of HTTP or App Engine tasks on Google Cloud.
-
-
-
-- **[Sidekiq Enterprise](https://sidekiq.org/)**  
-
-  Commercial offering built on the popular open-source Sidekiq Ruby background job framework, adding advanced features and support.
-
-
-
-- **[BullMQ Pro](https://bullmq.io/)**  
-
-  Commercial enhancements and support for the widely used open-source BullMQ Redis-based job queue.
-
-
-
-- **[IronWorker](https://www.iron.io/)**  
-
-  Cloud-based background job and worker platform supporting multiple languages and containerized workloads.
-
-
-
-- **[Restate](https://restate.dev/)**  
-
-  Durable execution and workflow platform focused on reliability, recovery, and developer-friendly orchestration primitives.
-
-
+- **[Talend](https://www.talend.com/)** (Qlik Talend)  
+  Enterprise data integration platform with strong ETL, data quality, MDM, and hybrid capabilities. Offers both cloud and self-managed options rooted in open-source heritage.
+- **[Matillion](https://www.matillion.com/)**  
+  Cloud-native ELT platform optimized for modern data warehouses (Snowflake, BigQuery, Redshift, Databricks). Visual pipeline design with pushdown transformations and strong warehouse-native performance.
+- **[Fivetran](https://www.fivetran.com/)**  
+  Fully managed ELT leader known for reliability, automatic schema handling, and a large catalog of high-quality connectors. Minimal maintenance for business-critical SaaS-to-warehouse pipelines.
+- **[Airbyte](https://airbyte.com/)**  
+  Popular open-core data integration platform (also available as managed cloud). Large connector library, Connector Development Kit, and flexible self-hosted or cloud deployment.
+- **[Hevo Data](https://hevodata.com/)**  
+  No-code / low-code ELT platform focused on real-time or near-real-time pipelines, ease of use, and predictable pricing for growing data teams.
+- **[Informatica](https://www.informatica.com/)** (now part of Salesforce)  
+  Enterprise-grade data management suite with extensive connectors, data quality, governance, MDM, and AI-assisted integration (CLAIRE).
+- **[IBM DataStage](https://www.ibm.com/products/datastage)**  
+  High-performance parallel ETL engine for complex, large-scale batch and hybrid workloads, often used in regulated and on-premises environments.
+- **[Azure Data Factory](https://azure.microsoft.com/en-us/products/data-factory/)**  
+  Microsoft’s cloud data integration service with code-free data flows, hybrid connectivity, SSIS lift-and-shift, and deep Azure ecosystem integration.
+- **[AWS Glue](https://aws.amazon.com/glue/)**  
+  Serverless ETL/ELT service on AWS with Spark-based jobs, Data Catalog, crawlers, and tight integration with the AWS analytics stack.
+- **[Stitch](https://www.stitchdata.com/)**  
+  Simple, managed ELT service (originally built on Singer) focused on straightforward SaaS and database replication into warehouses with predictable pricing.
 
 ## Open-Source GitHub Projects
-
-- **[Temporal](https://github.com/temporalio/temporal)**  
-
-  Leading open-source durable workflow and microservice orchestration platform with SDKs for Go, Java, TypeScript, Python, and more.
-
-
-
-- **[Trigger.dev](https://github.com/triggerdotdev/trigger.dev)**  
-
-  Open-source background jobs framework for TypeScript, supporting long-running tasks, AI workflows, and self-hosting.
-
-
-
-- **[Inngest](https://github.com/inngest/inngest)**  
-
-  Open-source event-driven durable execution engine with step functions, retries, and observability.
-
-
-
-- **[Hatchet](https://github.com/hatchet-dev/hatchet)**  
-
-  Open-source, high-performance task queue and workflow orchestration system designed for scale and developer experience.
-
-
-
-- **[BullMQ](https://github.com/taskforcesh/bullmq)**  
-
-  Fast, reliable, Redis-based (and PostgreSQL-capable) distributed job queue for Node.js and multiple other languages.
-
-
-
-- **[Sidekiq](https://github.com/sidekiq/sidekiq)**  
-
-  The dominant open-source background job framework for Ruby, known for performance and simplicity.
-
-
-
-- **[Celery](https://github.com/celery/celery)**  
-
-  Mature, widely used open-source distributed task queue for Python with support for multiple brokers.
-
-
-
-- **[RQ (Redis Queue)](https://github.com/rq/rq)**  
-
-  Simple, lightweight open-source Python library for queueing and processing background jobs with Redis.
-
-
-
-- **[Faktory](https://github.com/contribsys/faktory)**  
-
-  Language-agnostic open-source background job server from the creators of Sidekiq.
-
-
-
-- **[APScheduler](https://github.com/agronholm/apscheduler)**  
-
-  Advanced open-source Python task scheduling and job queue library supporting persistent storage and multiple backends.
-
-
+- **[Airbyte](https://github.com/airbytehq/airbyte)**  
+  Leading open-source ELT platform with 300–600+ connectors (certified + community), Connector Development Kit (CDK), UI, API, and full self-hosting support (Docker/Kubernetes). Strong alternative to managed ELT tools.
+- **[Meltano](https://github.com/meltano/meltano)**  
+  Declarative, code-first data integration engine built on the Singer specification. CLI-driven, GitOps-friendly, with orchestration support and access to hundreds of Singer taps/targets via Meltano Hub.
+- **[Apache NiFi](https://github.com/apache/nifi)**  
+  Powerful open-source dataflow system with visual drag-and-drop design for routing, transformation, protocol mediation, and real-time or batch movement. Excellent for complex, event-driven, or IoT-style pipelines.
+- **[Apache Airflow](https://github.com/apache/airflow)**  
+  The de-facto open-source workflow orchestrator for data pipelines. Define DAGs in Python, schedule complex multi-step ETL/ELT jobs, and monitor execution at scale.
+- **[dbt Core](https://github.com/dbt-labs/dbt-core)**  
+  Open-source transformation layer (the “T” in ELT). Write modular SQL models, tests, and documentation that run inside the warehouse; pairs perfectly with any extract-load tool.
+- **[Singer](https://www.singer.io/)** / Singer taps & targets  
+  Open-source specification and ecosystem of composable “taps” (extractors) and “targets” (loaders). Underpins many tools including Meltano and historical Stitch connectors.
+- **[dlt (data load tool)](https://github.com/dlt-hub/dlt)**  
+  Lightweight Python library for building data pipelines as code. Simple, flexible ingestion with schema inference and support for many sources/destinations.
+- **[Sling](https://github.com/slingdata-io/sling)** / **[ingestr](https://github.com/bruin-data/ingestr)** / similar CLIs  
+  Modern open-source CLI tools for fast, code-light data movement between databases, files, and warehouses.
+- **[Apache Spark](https://github.com/apache/spark)** + related engines  
+  Foundational open-source engine for large-scale data processing and custom ETL jobs (often used under Glue, Databricks, or self-managed clusters).
 
 ### Additional Strong Open-Source Options
+- **Orchestration & workflow engines**: Prefect, Dagster, Kestra, Mage, Temporal, Argo Workflows.
+- **Streaming & CDC**: Apache Kafka + Kafka Connect, Debezium, Flink, and related connectors.
+- **Legacy / visual tools**: Pentaho Data Integration (PDI/Kettle), older Talend Open Studio lineage (note: Open Studio was discontinued; migrate carefully).
+- **Python-centric libraries**: pandas, Polars, joblib, and custom pipeline frameworks.
+- Community **connector catalogs**, **schema evolution helpers**, and **data quality tools** (Great Expectations, Soda, etc.).
+- Many smaller **CLI extractors**, **DuckDB-based local ETL**, and **GitOps pipeline runners**.
 
-- Bee-Queue, Agenda, and other Node.js Redis/Mongo-backed job libraries.
-
-- Dramatiq and alternative Python task queues focused on simplicity and reliability.
-
-- Laravel Horizon / queues and PHP ecosystem job processors.
-
-- Restate open-source components and emerging durable-execution engines.
-
-- Classic message brokers (RabbitMQ, NATS, Kafka) used as foundations for custom job systems.
-
-- Cron-like schedulers and repeatable job libraries across languages.
-
-
-
-**Frameworks for building custom systems**: For durable multi-step workflows choose **Temporal** or **Inngest**; for high-throughput queues use **BullMQ**, **Sidekiq**, or **Hatchet**; for serverless/TypeScript-first jobs use **Trigger.dev**. Pair any of them with Redis, PostgreSQL, or cloud message services, add a monitoring UI (Bull Board, Sidekiq Web, Temporal UI, etc.), and instrument with OpenTelemetry for full visibility. Self-hosting these open-source cores gives complete control over cost and data.
-
-
+**Frameworks for building custom systems**: Pair **Airbyte** or **Meltano** (extract & load) with **dbt Core** (transform) and **Apache Airflow / Dagster / Prefect** (orchestration). Run everything on Kubernetes or simple Docker for full ownership. Add Apache NiFi for complex routing or Spark for heavy transformation workloads.
 
 ## How to Contribute
-
 1. Fork the repo.
-
 2. Add/edit entries in `README.md` (follow existing format).
-
 3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
 4. Submit PR with a short explanation.
-
-
 
 Star the repo if you find it useful!
 
-
-
 ## Disclaimer
-
 - This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Background job systems are critical infrastructure. Open-source solutions are production-proven at massive scale but still require careful configuration of retries, dead-letter queues, monitoring, and capacity planning.
-
-- Always design for failure: jobs must be idempotent, and poison messages must be handled gracefully.
-
-
+- ETL/ELT pipelines often move sensitive or regulated data; ensure compliance with privacy, security, and data-residency requirements.
+- Self-hosted open-source solutions require operational expertise (monitoring, scaling, connector maintenance, security hardening) and do not eliminate infrastructure or engineering costs.
 
 ---
-
-**Made for backend engineers, platform teams, and developers building reliable asynchronous systems.**
-
-Let's make background jobs and durable workflows more open, observable, and resilient.
+**Made for data engineers, analytics teams, and platform builders.**  
+Let's make data integration more open, reliable, and controllable.
